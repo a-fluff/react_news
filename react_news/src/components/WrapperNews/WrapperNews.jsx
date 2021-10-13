@@ -1,6 +1,6 @@
 import ItemNews from '../ItemNews/ItemNews';
 
-function WrapperNews({newsList}) { //можно деструтуризировать объект props, записав {img, title, content, date}
+function WrapperNews({isAuth, newsList, deleteNews}) {
   return (
     newsList.map((news, index) => {
       return (
@@ -10,6 +10,9 @@ function WrapperNews({newsList}) { //можно деструтуризирова
           title={news.title}
           content={news.content}
           date={news.date}
+          isAuth={isAuth}
+          id={news.id}
+          deleteNews={deleteNews}
         />)
     })
   )

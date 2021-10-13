@@ -42,3 +42,9 @@
   bottom: 5px;
   right: 5px;
 }
+
+.item-news__control {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
